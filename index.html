@@ -3,85 +3,59 @@
 
 <head>
     <meta charset="UTF-8" />
+    <title>Work Hours Calculator – Track Your Daily Working Time</title>
 
-    <!-- Google AdSense -->
+    <!-- AdSense (keep, but ads load later) -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8410279996360181"
         crossorigin="anonymous"></script>
-
-    <title>Work Hours Calculator</title>
 
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             background: #f4f6f8;
+            line-height: 1.6;
         }
 
-        /* NAVBAR */
         .navbar {
-            background: #ffffff;
-            border-bottom: 1px solid #e5e7eb;
+            background: #fff;
+            border-bottom: 1px solid #ddd;
             padding: 12px 20px;
         }
 
         .nav-container {
-            max-width: 1200px;
+            max-width: 1100px;
             margin: auto;
             display: flex;
             justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 18px;
-            font-weight: bold;
-            color: #333;
         }
 
         .nav-links a {
-            margin-left: 16px;
+            margin-left: 15px;
             text-decoration: none;
             color: #007bff;
-            font-weight: 500;
         }
 
-        .nav-links a:hover {
-            text-decoration: underline;
-        }
-
-        /* LAYOUT */
-        .layout {
-            display: grid;
-            grid-template-columns: 120px 1fr 120px;
-            grid-template-rows: auto 1fr auto;
-            min-height: calc(100vh - 60px);
-        }
-
-        .top-ad,
-        .bottom-ad {
-            grid-column: 1 / 4;
-            text-align: center;
+        .main {
+            max-width: 900px;
+            margin: auto;
             background: #fff;
-            padding: 8px;
-        }
-
-        .left-ad,
-        .right-ad {
-            background: #fff;
-            padding: 6px;
-            text-align: center;
-        }
-
-        .container {
-            background: #fff;
-            padding: 20px;
-            margin: 10px;
+            padding: 25px;
+            margin-top: 20px;
             border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
-        h1 {
-            text-align: center;
+        h1,
+        h2,
+        h3 {
+            color: #333;
+        }
+
+        .tool-box {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f1f3f5;
+            border-radius: 8px;
         }
 
         .row {
@@ -91,17 +65,17 @@
         }
 
         input {
-            flex: 1;
             padding: 8px;
+            flex: 1;
         }
 
         button {
             padding: 8px 14px;
-            cursor: pointer;
-            border: none;
             background: #007bff;
             color: #fff;
+            border: none;
             border-radius: 4px;
+            cursor: pointer;
         }
 
         button.remove {
@@ -109,55 +83,30 @@
         }
 
         .result {
-            margin-top: 20px;
-            background: #f1f3f5;
+            margin-top: 15px;
+            background: #fff;
             padding: 15px;
             border-radius: 6px;
         }
 
-        .highlight {
-            font-weight: bold;
-            color: #2c7be5;
+        .ad-block {
+            margin: 30px 0;
+            text-align: center;
         }
 
         footer {
             text-align: center;
-            padding: 12px;
-            background: #fff;
+            padding: 20px;
             font-size: 14px;
-        }
-
-        footer a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #007bff;
-        }
-
-        /* MOBILE */
-        @media (max-width: 768px) {
-            .layout {
-                grid-template-columns: 1fr;
-            }
-
-            .left-ad,
-            .right-ad {
-                display: none;
-            }
-
-            .nav-container {
-                flex-direction: column;
-                gap: 10px;
-            }
         }
     </style>
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">⏱️ Work Hours Calculator</div>
+            <strong>⏱️ Work Hours Calculator</strong>
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
@@ -167,36 +116,42 @@
         </div>
     </nav>
 
-    <div class="layout">
+    <div class="main">
 
-        <!-- TOP AD -->
-        <div class="top-ad">
-            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8410279996360181"
-                data-ad-slot="3357060842" data-ad-format="auto" data-full-width-responsive="true"></ins>
-        </div>
+        <h1>Work Hours Calculator – Calculate Your Daily Working Time Easily</h1>
 
-        <!-- LEFT AD -->
-        <div class="left-ad">
-            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8410279996360181"
-                data-ad-slot="9599025823" data-ad-format="auto"></ins>
-        </div>
+        <p>
+            Managing daily working hours can be difficult, especially for employees, freelancers,
+            remote workers, and shift-based professionals. Manually calculating productive hours
+            often leads to mistakes and confusion.
+        </p>
 
-        <!-- MAIN CONTENT -->
-        <div class="container">
-            <h1>⏱️ Work Hours Calculator</h1>
-            <p>
-                This free Work Hours Calculator helps employees, freelancers,
-                and remote workers track their productive hours throughout the day.
-                By entering multiple clock-in and clock-out times, users can calculate
-                total working time and know exactly when they can leave after completing
-                their target hours. This tool is useful for office employees, IT professionals,
-                shift workers, and anyone who wants accurate time tracking.
-            </p>
+        <p>
+            The <strong>Work Hours Calculator</strong> helps you accurately calculate your total working
+            time by simply entering your clock-in and clock-out timings. This tool ensures transparency
+            in work tracking and helps you know exactly when your target working hours are completed.
+        </p>
 
-            <label>
-                Target Productive Hours:
-                <input type="number" id="targetHours" value="8" step="0.25" />
-            </label>
+        <h2>Who Should Use This Tool?</h2>
+        <ul>
+            <li>Office employees tracking daily attendance</li>
+            <li>Freelancers managing billable hours</li>
+            <li>Remote workers working flexible schedules</li>
+            <li>IT professionals and shift workers</li>
+        </ul>
+
+        <h2>How This Work Hours Calculator Works</h2>
+        <p>
+            You can add multiple clock-in and clock-out entries throughout the day.
+            The calculator automatically sums up your productive time and tells you
+            how much time remains to complete your target hours.
+        </p>
+
+        <h2>Free Online Work Hours Calculator Tool</h2>
+
+        <div class="tool-box">
+            <label>Target Productive Hours:
+                <input type="number" id="targetHours" value="8" step="0.25"></label>
 
             <h3>Clock In / Out (HH:MM:SS)</h3>
             <div id="timeRows"></div>
@@ -206,25 +161,17 @@
             <div class="result" id="result"></div>
         </div>
 
-        <!-- RIGHT AD -->
-        <div class="right-ad">
-            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8410279996360181"
-                data-ad-slot="9599025823" data-ad-format="auto"></ins>
-        </div>
-
-        <!-- BOTTOM AD -->
-        <div class="bottom-ad">
+        <!-- ONLY ONE AD, AFTER CONTENT -->
+        <div class="ad-block">
             <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8410279996360181"
                 data-ad-slot="3357060842" data-ad-format="auto" data-full-width-responsive="true"></ins>
         </div>
 
     </div>
 
-    <!-- FOOTER -->
     <footer>
+        © 2026 Work Hours Calculator |
         <a href="privacy-policy.html">Privacy Policy</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
     </footer>
 
     <script>
@@ -232,10 +179,10 @@
             const row = document.createElement("div");
             row.className = "row";
             row.innerHTML = `
-                <input type="time" step="1" class="inTime">
-                <input type="time" step="1" class="outTime">
-                <button class="remove" onclick="this.parentElement.remove(); calculate()">✖</button>
-            `;
+    <input type="time" step="1" class="inTime">
+    <input type="time" step="1" class="outTime">
+    <button class="remove" onclick="this.parentElement.remove(); calculate()">✖</button>
+  `;
             document.getElementById("timeRows").appendChild(row);
         }
 
@@ -248,29 +195,18 @@
             const h = Math.floor(sec / 3600);
             const m = Math.floor((sec % 3600) / 60);
             const s = sec % 60;
-            return `${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
-        }
-
-        function secondsTo12Hour(sec) {
-            sec %= 86400;
-            let h = Math.floor(sec / 3600);
-            const m = Math.floor((sec % 3600) / 60);
-            const s = sec % 60;
-            const ap = h >= 12 ? "PM" : "AM";
-            h = h % 12 || 12;
-            return `${h}:${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")} ${ap}`;
+            return `${h}:${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
         }
 
         function calculate() {
             const ins = document.querySelectorAll(".inTime");
             const outs = document.querySelectorAll(".outTime");
-
             let total = 0;
             let lastIn = null;
 
             ins.forEach((el, i) => {
-                if (el.value) lastIn = timeToSeconds(el.value);
                 if (el.value && outs[i].value) {
+                    lastIn = timeToSeconds(el.value);
                     total += timeToSeconds(outs[i].value) - timeToSeconds(el.value);
                 }
             });
@@ -278,15 +214,12 @@
             const target = document.getElementById("targetHours").value * 3600;
             const remain = target - total;
 
-            let html = `<p>Total Productive Time: <span class="highlight">${secondsToHMS(total)}</span></p>`;
+            let html = `<p>Total Productive Time: <strong>${secondsToHMS(total)}</strong></p>`;
 
             if (remain > 0 && lastIn !== null) {
-                html += `
-                    <p>Remaining Time: <span class="highlight">${secondsToHMS(remain)}</span></p>
-                    <p>You can leave at: <span class="highlight">${secondsTo12Hour(lastIn + remain)}</span></p>
-                `;
+                html += `<p>Remaining Time: <strong>${secondsToHMS(remain)}</strong></p>`;
             } else if (remain <= 0) {
-                html += `<p class="highlight">🎉 Target completed! You can leave now.</p>`;
+                html += `<p><strong>🎉 Target completed!</strong></p>`;
             }
 
             document.getElementById("result").innerHTML = html;
@@ -294,11 +227,7 @@
 
         document.addEventListener("input", calculate);
         addRow();
-
-        // Load all ads
-        document.querySelectorAll('.adsbygoogle').forEach(() => {
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        });
+        (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 
 </body>
